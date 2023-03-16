@@ -1,2 +1,3 @@
 FROM nginx
-COPY health-check.conf /etc/nginx/conf.d/health-check.conf
+COPY nginx.conf /etc/nginx/conf.d/nginx.conf
+CMD ["nginx", "-g", "daemon off;"]
